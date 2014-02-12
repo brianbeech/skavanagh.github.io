@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Professional accounting services dedicated to provide current and concise preparation of all business management requirements">
-    <meta name="keywords" content="tax, accounting, taxes, bookkeeping, cpa, business, louisville, kentucky, ky, southern indiana, in" />  <meta name="author" content="Dan Leary">
+    <meta name="keywords" content="tax, accounting, taxes, bookkeeping, cpa, business, louisville, kentucky, ky, southern indiana, in"/>
+    <meta name="author" content="Dan Leary">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
     <title>Schultz &amp; Associates PLLC</title>
@@ -30,9 +31,25 @@
         .carousel-caption {
             text-align: left;
         }
-	a {
-	   color: #5A5A5A;
-	}
+
+
+
+        .iframe-rwd {
+            position: relative;
+            padding-bottom: 65.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .iframe-rwd iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 </head>
 <!-- NAVBAR
@@ -138,10 +155,13 @@
         <div class="col-lg-4">
             <a name="about"></a>
 
-            <h2>About</h2>
-            <h4>Schultz & Associates CPAs</h4>
 
-            <p>Professional accounting services dedicated to provide current and concise preparation of all business management requirements.</p>
+            <h2>Schultz & Associates CPAs</h2>
+
+            <p>Professional accounting services dedicated to provide current and concise preparation of all business
+                management requirements.</p>
+
+            <p><a class="btn btn-default" href="#faq" role="button">Learn More &raquo;</a></p>
         </div>
         <!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -175,6 +195,7 @@
     <div class="row featurette">
         <div class="col-md-7">
             <a name="faq"></a>
+
             <h2>What are the requirements to be designated as a CPA?</h2>
 
             <p class="lead">Requirements vary from state to state. Kentucky state law sets forth the following
@@ -250,14 +271,16 @@
                 Louisville, KY 40207<br/>
                 (502) 893-0555
             </p>
-            <iframe width="auto" height="auto" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?ie=UTF8&amp;q=Schultz+%26+Associates+PLLC&amp;fb=1&amp;gl=us&amp;hq=schultz+and+associates+louisville&amp;cid=7648889604079592886&amp;t=m&amp;ll=38.281953,-85.638771&amp;spn=0.008068,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
-            <br/>
-            <small><a
-                    href="https://maps.google.com/maps?ie=UTF8&amp;q=Schultz+%26+Associates+PLLC&amp;fb=1&amp;gl=us&amp;hq=schultz+and+associates+louisville&amp;cid=7648889604079592886&amp;t=m&amp;ll=38.281953,-85.638771&amp;spn=0.008068,0.013733&amp;z=16&amp;iwloc=A&amp;source=embed"
-                    style="color:#5A5A5A;text-align:left">View Larger Map</a></small>
 
+            <div class="iframe-rwd">
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?ie=UTF8&amp;q=Schultz+%26+Associates+PLLC&amp;fb=1&amp;gl=us&amp;hq=schultz+and+associates+louisville&amp;cid=7648889604079592886&amp;t=m&amp;ll=38.281953,-85.638771&amp;spn=0.008068,0.013733&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+                <br/>
+                <small><a
+                        href="https://maps.google.com/maps?ie=UTF8&amp;q=Schultz+%26+Associates+PLLC&amp;fb=1&amp;gl=us&amp;hq=schultz+and+associates+louisville&amp;cid=7648889604079592886&amp;t=m&amp;ll=38.281953,-85.638771&amp;spn=0.008068,0.013733&amp;z=16&amp;iwloc=A&amp;source=embed"
+                        style="color:#5A5A5A;text-align:left">View Larger Map</a></small>
 
+            </div>
 
         </div>
 
@@ -284,7 +307,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="assets/js/docs.min.js"></script>
-<script>
+<script type="text/javascript">
     !function ($) {
         $(function () {
             // carousel demo
